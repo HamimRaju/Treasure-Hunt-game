@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Hunt Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Treasure Hunt Game</h1>
+
+<!-- Balloon -->
+<div id="balloon">🎈</div>
+
+<div id="grid"></div>
+
+<div id="message">Moves left: 5</div>
+
+<div id="controls">
+  <button onclick="move('U')">UP</button>
+  <button onclick="move('D')">DOWN</button>
+  <button onclick="move('L')">LEFT</button>
+  <button onclick="move('R')">RIGHT</button>
+  <button onclick="restartGame()">Restart Game</button>
+</div>
+
+<!-- Confetti library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
