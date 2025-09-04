@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #00695c;
+}
+
+/* Balloon above grid */
+#balloon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Grid */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(4, 60px);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #004d40;
+    border-radius: 5px;
+    background-color: #b2dfdb;
+}
+
+.player {
+    background-color: #ffeb3b;
+}
+
+.treasure {
+    background-color: #4caf50;
+    color: white;
+}
+
+.mine {
+    background-color: #b2dfdb; /* hidden */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00695c;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #00695c;
+    color: white;
+}
+
+button:hover {
+    background-color: #004d40;
+}
